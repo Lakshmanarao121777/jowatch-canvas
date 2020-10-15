@@ -1,0 +1,171 @@
+.mainpanel{
+  position: absolute;
+  width: calc(100% - 100px);
+  top : 50px;
+  left: 100px;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.refObject{
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.refObjectImg{
+  background-position:center;
+   background-repeat:no-repeat;
+}
+.watchImg{
+  background-size: 100% 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.action-panel{
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  height: 70px;
+  padding-top: 15px;
+}
+.content{
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+}
+
+
+.room-view__measures .close-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  color: #000;
+  padding: 0;
+  margin: 5px;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.measure {
+  position: absolute;
+  height: 1.2em;
+}
+.draggable--dragging .measure,
+.draggable--intersected .measure {
+  display: none;
+}
+.measure__left {
+  position: absolute;
+  height: 0.8em;
+  border-top: 1px solid transparent;
+  border-left: 1px solid #000;
+  left: 0;
+}
+.measure__left:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  box-shadow: 0 0 6px #fff;
+}
+.measure__arrow {
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid #000;
+}
+.measure__arrow:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  box-shadow: 0 0 6px #fff;
+}
+.measure__text {
+  position: absolute;
+  height: 1em;
+  text-align: center;
+  color: #000;
+  text-shadow: 0 0 6px #fff;
+  white-space: nowrap;
+  font-size: 0.7em;
+  margin-top: -0.2em;
+  cursor: default;
+}
+.measure__right {
+  position: absolute;
+  height: 0.8em;
+  border-top: 1px solid transparent;
+  border-right: 1px solid #000;
+  right: 0;
+}
+.measure__right:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  box-shadow: 0 0 6px #fff;
+}
+.measure--white .measure__left {
+  border-left: 1px solid #fff;
+}
+.measure--white .measure__text {
+  color: #fff !important;
+  text-shadow: 0 0 4px #000;
+}
+.measure--white .measure__right {
+  border-right: 1px solid #fff;
+}
+.measure--white .measure__arrow {
+  border-bottom: 1px solid #fff;
+}
+.measures-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ar-image-panel--watches .measure .measure__text {
+  -webkit-transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important;
+  color: #fff !important;
+  display: inline-block;
+  width: 0 !important;
+  top: 100% !important;
+  left: 50% !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ar-image-panel--watches .measure .measure__arrow {
+  border-color: #fff;
+}
+.ar-image-panel--watches .measure .measure__left {
+  width: 100% !important;
+}
+.ar-image-panel--watches .measure .measure__left:after,
+.ar-image-panel--watches .measure .measure__right:after {
+  background: #fff;
+}

@@ -1,0 +1,221 @@
+.header_title {
+  height          : 50px;
+  border-bottom   : 1px solid #d8d8d8;
+  padding         : 10px;
+  background-color: #ffffff;
+  z-index         : 10000;
+  position        : fixed;
+  width           : 100%;
+}
+
+.header_title h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-size  : 24px;
+  font-weight: 700;
+  color      : #000;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.sidebar {
+  height     : calc(100vh - 50px);
+  width      : 100%;
+  overflow   : hidden;
+  /* position: relative; */
+}
+
+.inner_sidebar {
+  position: absolute;
+  top     : 50px;
+  bottom  : 0px;
+  left    : 0px;
+  right   : -15px;
+  overflow: auto;
+}
+
+
+.inner_sidebar ul {
+  padding-top  : 1px;
+  padding-left : 0;
+  padding-right: 0;
+}
+
+.inner_sidebar ul>li {
+  border-top  : 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  border-left : none;
+  height      : 114px;
+  width       : 100px;
+  box-sizing  : border-box;
+}
+
+.inner_sidebar ul>li:first-child {
+  border-top: none;
+}
+
+.active {
+  background: #f2f2f2;
+}
+
+.item_box {
+  width              : 100%;
+  height             : 100%;
+  cursor             : pointer;
+  position           : relative;
+  overflow           : hidden;
+  -webkit-user-select: none;
+  -moz-user-select   : none;
+  -ms-user-select    : none;
+  user-select        : none;
+  padding            : 1px;
+}
+
+.item_content {
+  width : 100%;
+  height: 100%;
+}
+
+.item_content .title {
+
+  font-size    : 10px;
+  width        : 100%;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+  display      : inline-block;
+
+  display        : flex;
+  -ms-flex-pack  : center;
+  justify-content: center;
+
+
+  height           : 30px;
+  overflow         : hidden;
+  line-height      : 15px;
+  margin           : 14px 7px 0;
+  text-align       : center;
+  -ms-flex-align   : start;
+  align-items      : flex-start;
+  -webkit-transform: translateZ(0);
+  transform        : translateZ(0);
+}
+
+.title_title {
+  font-size    : 10px;
+  width        : 100%;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+  display      : inline-block;
+}
+
+.thumb {
+  display        : -ms-flexbox;
+  display        : flex;
+  -ms-flex-align : center;
+  align-items    : center;
+  -ms-flex-pack  : center;
+  justify-content: center;
+  height         : 40px;
+  padding        : 1px;
+}
+
+.active .title {
+  opacity: 0;
+}
+
+.item-box--active .item-box__content-overlay {
+
+  display       : -ms-flexbox;
+  display       : flex;
+  padding-bottom: 16px;
+  opacity       : 1;
+  overflow      : hidden;
+  background    : rgba(50, 50, 50, .7);
+
+}
+
+.item-box__content-overlay,
+.item-box__content-processing {
+  position          : absolute;
+  bottom            : 0;
+  left              : 0;
+  width             : 100%;
+  height            : 100%;
+  display           : none;
+  -ms-flex-align    : end;
+  align-items       : flex-end;
+  padding-bottom    : 19px;
+  text-align        : center;
+  -webkit-transition: all .3s ease;
+  transition        : all .3s ease;
+  background        : rgba(50, 50, 50, .7);
+  color             : #fff;
+}
+
+.content-overlay__title--top {
+  line-height  : 15px;
+  position     : absolute;
+  top          : 14px;
+  left         : 0;
+  padding      : 0 8px;
+  overflow     : hidden;
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+}
+
+.content-overlay__title {
+  width     : 100%;
+  text-align: center;
+  overflow  : hidden;
+}
+
+.item-box__v-icon {
+  width        : 20px;
+  height       : 20px;
+  border       : 2px solid #fff;
+  position     : absolute;
+  top          : calc(50% - 10px);
+  left         : calc(50% - 10px);
+  border-radius: 20px
+}
+
+.item-box__v-icon:after {
+  top              : 7px;
+  left             : 4px;
+  height           : 5px;
+  border-radius    : 1px 1px 0 0;
+  -webkit-transform: rotate(-41deg);
+  transform        : rotate(-41deg)
+}
+
+.item-box__v-icon:after,
+.item-box__v-icon:before {
+  content   : "";
+  position  : absolute;
+  width     : 2px;
+  background: #fff
+}
+
+.item-box__v-icon:before {
+  top              : 3px;
+  left             : 9px;
+  height           : 10px;
+  border-radius    : 1px 1px 1px 0;
+  -webkit-transform: rotate(42deg);
+  transform        : rotate(42deg)
+}
+
+.unit-postfix {
+  font-family: "Open Sans", sans-serif;
+  font-size  : 11px;
+  color      : #f2f2f2
+}
+
+.item-box__subtitle {
+  font-size  : 11px;
+  font-weight: 400;
+}

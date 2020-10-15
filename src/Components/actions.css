@@ -1,0 +1,389 @@
+.context-custom-design-panel__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0em;
+    left: 0;
+    z-index: 11;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    height: 70px; /* fixed height for ie11 & safari */
+    padding-top: 15px;
+    /*position: absolute;
+    width: 100%;*/
+}
+
+.context-custom-design-panel__container--invert-color {
+    color: #323232;
+}
+
+.context-custom-design-panel__container--vertical {
+    flex-direction: column;
+    height: 100%;
+    width: 70px;
+    padding-top: 22px;
+}
+
+.context-custom-design-panel__toggle-mode {
+    display: flex;
+    align-items: center;
+}
+
+.context-custom-design-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.context-custom-design-panel--vertical {
+    flex-direction: column;
+    padding: 10px 0;
+} 
+
+.with-atc .context-custom-design-panel {
+    padding: 0 10px;
+}
+
+.context-custom-design-panel__container__labels {
+    line-height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+    cursor: default;
+}
+
+.context-custom-design-panel__container h3{
+    line-height: 1.4em;
+}
+
+.context-custom-design-panel__skintone {
+    flex: 1 1 260px;
+    position: relative;
+}
+
+.context-custom-design-panel__skintone--vertical {
+    flex: 1 1 180px;
+    /*min-height: 0 for correct working in FF/Edge/IE*/
+    min-height: 0;
+}
+
+.context-custom-design-panel__skintone .context-custom-design-panel__label {
+    flex: 0 0 47px;
+    cursor: default;
+}
+
+.context-custom-design-panel__description {
+    flex: 1 1 220px;
+}
+
+
+.context-custom-design-panel__units {
+    flex: 0 0 102px;
+    padding: 0 10px 0 0 !important;
+}
+
+.context-custom-design-panel__units--vertical {
+    flex: 1 1 160px;
+    order: 0;
+}
+
+.context-custom-design-panel__zoom {
+    flex: 1 0 214px;
+}
+
+.context-custom-design-panel__zoom--vertical {
+    flex: 1 1 220px;
+    /*min-height: 0 for correct working in FF/Edge/IE*/
+    min-height: 0;
+}
+
+.context-custom-design-panel__description--ring {
+    flex: 1 0 110px;
+}
+
+.context-custom-design-panel__slider-container {
+    max-width: 300px;
+    padding: 0.6em 1em;
+    padding-top: 0.8em;
+    width: 80%;
+    min-width: 70px;
+}
+
+.context-custom-design-panel__slider-container--vertical {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    flex: 1 1 10em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.context-custom-design-panel__labels-container--vertical {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.context-custom-design-panel__label {
+    font-size: 10px;
+    margin-right: 10px;
+    cursor: default;
+}
+
+.context-custom-design-panel__label--vertical {
+    font-size: 10px;
+    margin: 10px 0;
+    cursor: default;
+}
+
+.context-custom-design-panel__zoom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.context-custom-design-panel__units-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.context-custom-design-panel__units-container .context-custom-design-panel__label{
+    display: none;
+}
+
+.context-custom-design-panel__units-container--vertical {
+    flex-direction: column;
+}
+
+.context-custom-design-panel__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #323232;
+    box-shadow: 0 0 4px 0 rgba(50, 50, 50, 0.4);
+    background-color: #fdfdfd;
+    border: solid 0.5px #fdfdfd;
+    margin: 0.5em;
+}
+
+.context-custom-design-panel__button:hover {
+    cursor: pointer;
+}
+
+.context-custom-design-panel__button--zoom {
+    height: 1.5em;
+    width: 1.5em;
+    flex: 0 0 1.5em;
+}
+
+.with-atc .context-custom-design-panel__skintone, .with-atc .context-custom-design-panel__zoom-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.context-custom-design-panel__zoom-controls {
+    max-width: 300px;
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.context-custom-design-panel__zoom-controls--vertical {
+    flex: 0 1 220px;
+    flex-direction: column-reverse;
+    align-items: center;
+    /*min-height: 0 for correct working in FF/Edge/IE*/
+    min-height: 0;
+}
+
+.context-custom-design-panel__container .unit-postfix {
+    color: white;
+    background: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+}
+
+.context-custom-design-panel__container--invert-color .unit-postfix {
+    color: #323232;
+}
+
+.with-atc .zoom-label {
+    flex: 1 1 100%;
+}
+
+.with-atc .context-custom-design-panel__zoom {
+    flex: 1 1 214px;
+    min-width: 150px;
+}
+
+.with-atc .context-custom-design-panel__skintone {
+    flex: 1 1 214px;
+}
+
+.with-atc .context-custom-design-panel__units .context-custom-design-panel__label {
+    display: none;
+}
+
+.context-panel__atc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    flex: 1 0 100px;
+}
+
+.context-panel__atc .minicart__add-to-cart {
+    font-size: 1.1em;
+}
+
+.context-panel__atc .minicart__price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.context-custom-design-panel__container svg {
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    .context-custom-design-panel {
+        padding: 0 10px;
+    }
+
+    .context-custom-design-panel__units .context-custom-design-panel__label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .context-custom-design-panel {
+        padding: 0 10px;
+        width: 100%;
+        flex-wrap: wrap;
+        border: none;
+    }
+
+    .context-custom-design-panel__units {
+        flex-grow: 0;
+    }
+
+    .context-custom-design-panel__container {
+        justify-content: flex-start;
+    }
+
+    .context-custom-design-panel__skintone .context-custom-design-panel__label {
+        display: none;
+    }
+    .context-custom-design-panel__skintone .context-custom-design-panel__label.context-custom-design-panel__label--mobile{
+        position: absolute;
+        top:0;
+        left: 18%;
+        width: 82%;
+        text-align: left;
+        font-size: 10px;
+        color: black;
+        display: block;
+    }
+    .context-panel__atc {
+        display: none;
+    }
+
+    .context-custom-design-panel__zoom, .context-custom-design-panel__description {
+        display: none !important;
+    }
+
+    .context-custom-design-panel__label {
+        line-height: 1em;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .context-custom-design-panel__description--ring {
+        display: none;
+    }
+
+    .context-custom-design-panel__container__labels {
+        line-height: 2em;
+        display: none;
+    }
+
+    .context-custom-design-panel__container__labels--ring {
+        display: none;
+    }
+
+    .zoom-slider, .zoom-label {
+        display: none;
+    }
+
+    .context-custom-design-panel__zoom-container {
+        display: none;
+    }
+
+    .context-custom-design-panel__toggle-mode {
+        padding-left: 20px;
+        order: -1;
+        margin-right: 20px;
+    }
+}
+
+@media (max-height: 580px) {
+    .context-custom-design-panel--vertical {
+        padding: 5px 0 0 0;
+    }
+
+    .context-custom-design-panel--vertical:last-child {
+        padding: 0;
+    }
+
+    .context-custom-design-panel__description--vertical {
+        height: 2em;
+    }
+
+    .context-custom-design-panel__labels-container--vertical {
+        flex-direction: row;
+    }
+
+    .context-custom-design-panel__labels-container--vertical h3{
+        flex: initial;
+        margin: 0 20px;
+    }
+
+    .context-custom-design-panel__label--vertical {
+        margin: 5px 0;
+    }
+
+    .context-custom-design-panel__units--vertical {
+        flex: 1 1 140px;
+    }
+}
+
+@media (max-height: 450px) {
+    .context-custom-design-panel__zoom--vertical {
+        flex: 0 0 85px;
+    }
+    .context-custom-design-panel__slider-container--vertical.zoom-slider {
+        display: none;
+    }
+    .context-custom-design-panel__units--vertical {
+        flex: 1 1 100px;
+    }
+    .context-custom-design-panel__label--vertical.unit-label {
+        display: none;
+    }
+}
